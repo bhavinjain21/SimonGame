@@ -5,7 +5,7 @@ var score = 0;
 var started = false;
 $(document).click(function() {
   if (!started) {
-    $("h2").text("Score - "+score);
+    $("h2").text("Score - 0");
     nextSeq();
     started = true;
   }
