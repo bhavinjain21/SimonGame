@@ -13,7 +13,7 @@ $(document).click(function() {
 $(".btn").click(function(){
   var c = $(this).attr("id");
   ucp.push(c);
-  //ps(c);
+  ps(c);
   animatePress(c);
   
   check(ucp.length-1);
@@ -27,7 +27,7 @@ function check(level){
     },1000);
     }
   }else{
-   // ps("wrong");
+    ps("wrong");
     $("body").addClass("game-over");
     $("h1").text("Game Over😖😖 Click to restart");
     setTimeout(function () {
@@ -44,7 +44,7 @@ function nextSeq(){
   var ranCol = colors[a];
   gp.push(ranCol);
   $("#"+ranCol).fadeIn(100).fadeOut(100).fadeIn(100);
-   //ps(ranCol);
+   ps(ranCol);
    }
 function ps(name){
   var audio = new Audio(name+".mp3");
