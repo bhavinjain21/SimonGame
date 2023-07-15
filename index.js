@@ -3,12 +3,13 @@ var gp = [];
 var ucp = [];
 var score = 0;
 var started = false;
-$(document).click(function() {
+$(".restart").click(function() {
   if (!started) {
     $("h1").text("...");
     $("h2").text("Score - 0");
     nextSeq();
     started = true;
+$(".restart").animate({opacity:0});
   }
 });
 $(".btn").click(function(){
@@ -34,9 +35,17 @@ function check(level){
     $("h1").text("Game Over😖😖 Click to restart");
     setTimeout(function () {
         $("body").removeClass("game-over");
-      $("h1").text("Play again");
+      
       }, 200);
-      startOver();
+setTimeout(function () {
+        $("h1").text("Play Again Click Restart");
+      }, 1000);
+$(".restart").text("Restart");
+      $(".restart").animate({opacity:1});
+      $(".restart").click(function(){
+        location.reload();
+      });
+      
   }  
 }
 function nextSeq(){
@@ -58,8 +67,3 @@ function animatePress(currentColor) {
     $("#" + currentColor).removeClass("pressed");
   }, 100);
 }
-function startOver() {
-  score = 0;
-  gamePattern = [];
-  started = false;
-               }
