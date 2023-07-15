@@ -55,3 +55,11 @@ h2{
   color: white;
   text-align: center;
 }
+.restart{
+ appearance: button;
+ color:#fff;
+ background-color: #32a87b;
+ height:50px;
+ font-size:20px;
+ width:120px;
+ }
