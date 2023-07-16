@@ -49,15 +49,18 @@ h1 {
 
 .s5 {
   background-image: url("s5.jpeg");
-  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 .sten {
   background-image: url("sten.jpeg");
-  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 .s15 {
   background-image: url("s15.jpeg");
-  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .pressed {
