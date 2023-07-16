@@ -50,17 +50,17 @@ h1 {
 .s5 {
   background-image: url("s5.jpeg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 .sten {
   background-image: url("sten.jpeg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 .s15 {
   background-image: url("s15.jpeg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
 }
 
 .pressed {
