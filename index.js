@@ -48,9 +48,27 @@ $(".restart").text("Restart");
       
   }  
 }
+function levelUp(){
+    $("body").css("background-image","s5.jpeg");
+    var audio = new Audio("s5.mp3");
+    audio.play();
+  }
+  function levelUp1(){
+    $("body").css("background-image","sten.jpeg");
+    var audio = new Audio("sten.mp3");
+    audio.play();
+  }
+ function levelUp2(){
+    $("body").css("background-image","s15.jpeg");
+    var audio = new Audio("s15.mp3");
+    audio.play();
+  }
 function nextSeq(){
   ucp=[];
   score++;
+  if(score===5)levelUp();
+  if(score===10)levelUp1();
+  if(score===15)levelUp2();
   var a = Math.floor(Math.random()*4);
   var ranCol = colors[a];
   gp.push(ranCol);
